@@ -9,9 +9,81 @@ pipeline {
           }
         }
 
-        stage('sleep') {
+        stage('sleep1') {
           steps {
             sleep 3
+          }
+        }
+
+        stage('sleep2') {
+          steps {
+            sleep 1
+          }
+        }
+
+        stage('sleep3') {
+          steps {
+            sleep 1
+          }
+        }
+
+        stage('sleep4') {
+          steps {
+            sleep 1
+          }
+        }
+
+        stage('sleep5') {
+          steps {
+            sleep 1
+          }
+        }
+
+        stage('sleep6') {
+          steps {
+            sleep 1
+          }
+        }
+
+        stage('sleep7') {
+          steps {
+            sleep 1
+          }
+        }
+
+        stage('sleep8') {
+          steps {
+            sleep 1
+          }
+        }
+
+        stage('sleep9') {
+          steps {
+            sleep 1
+          }
+        }
+
+        stage('sleep10') {
+          steps {
+            sleep 1
+          }
+        }
+
+        stage('sleep11') {
+          steps {
+            sleep 1
+          }
+        }
+
+        stage('sleep12') {
+          steps {
+            sleep 1
+          }
+        }
+
+        stage('sleep13') {
+          steps {
+            sleep 1
           }
         }
 
