@@ -96,5 +96,12 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        echo '123'
+        node(label: '123')
+      }
+    }
+
   }
 }
