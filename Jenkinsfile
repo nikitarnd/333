@@ -83,7 +83,7 @@ pipeline {
 
         stage('sleep13') {
           steps {
-            sleep 1
+            sleep 13
           }
         }
 
@@ -96,10 +96,15 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('123') {
       steps {
-        echo '123'
-        node(label: '123')
+        build(job: '321312', propagate: true, wait: true, quietPeriod: 1)
+      }
+    }
+
+    stage('deploy') {
+      steps {
+        waitForBuild(runId: '3321', propagate: true)
       }
     }
 
