@@ -102,9 +102,9 @@ pipeline {
       }
     }
 
-    stage('deploy') {
+    stage('') {
       steps {
-        waitForBuild(runId: '3321', propagate: true)
+        build 'newjob'
       }
     }
 
