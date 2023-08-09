@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label '123'
+    }
+
+  }
   stages {
     stage('wait') {
       parallel {
@@ -15,31 +20,7 @@ pipeline {
           }
         }
 
-        stage('sleep2') {
-          steps {
-            sleep 1
-          }
-        }
-
-        stage('sleep3') {
-          steps {
-            sleep 1
-          }
-        }
-
-        stage('sleep4') {
-          steps {
-            sleep 1
-          }
-        }
-
         stage('sleep5') {
-          steps {
-            sleep 1
-          }
-        }
-
-        stage('sleep6') {
           steps {
             sleep 1
           }
@@ -52,12 +33,6 @@ pipeline {
         }
 
         stage('sleep8') {
-          steps {
-            sleep 1
-          }
-        }
-
-        stage('sleep9') {
           steps {
             sleep 1
           }
@@ -96,11 +71,14 @@ pipeline {
       }
     }
 
-    stage('end') {
+    stage('print') {
       steps {
-        echo 'end'
+        echo 'print'
       }
     }
 
+  }
+  environment {
+    env1 = 'env2'
   }
 }
