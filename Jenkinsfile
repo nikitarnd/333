@@ -104,7 +104,7 @@ pipeline {
 
     stage('') {
       steps {
-        build 'newjob'
+        error 'yes'
       }
     }
 
